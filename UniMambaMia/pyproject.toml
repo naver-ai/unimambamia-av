@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llava"
+version = "1.2.2.post1"
+description = "Towards GPT-4 like large language and visual assistant."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "transformers==4.50.0", "tokenizers", "sentencepiece", "accelerate==1.0.1",
+    "torch", "torchvision", "numpy", "einops", "timm==1.0.13",
+    "deepspeed==0.14.4", "ninja", "liger_kernel==0.5.2",
+    "decord", "pillow", "wandb==0.18.7",
+]", "numpy", "scikit-learn",
+    "gradio", "gradio_client",
+    "requests", "httpx==0.24.0", "uvicorn", "fastapi",
+    "einops", "einops-exts", "timm==1.0.13", "deepspeed==0.14.4", "ninja", 
+    "wandb==0.18.7", "gspread", "strsimpy", "nvitop", "fire", "xformers==0.0.28", "lmdb",
+    "open_clip_torch==2.29.0", "liger_kernel==0.5.2", "decord",
+    "librosa", "soundfile",
+]
+
+[project.optional-dependencies]
+train = ["deepspeed==0.14.4", "ninja", "wandb"]
+build = ["build", "twine"]
+
+[project.urls]
+"Homepage" = "https://llava-vl.github.io"
+"Bug Tracker" = "https://github.com/haotian-liu/LLaVA/issues"
+
+[tool.setuptools]
+packages.find.include = ["llava"]
+packages.find.exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*", "checkpoints", "mlruns", "wandb"]
+include-package-data = false
+
+[tool.wheel]
+exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*", "checkpoints", "mlruns", "wandb"]

@@ -1,0 +1,16 @@
+# Item positions (and, for the Hard split, our probe outputs) only; the questions and answers are
+# joined from the official Music-AVQA release at load time (see utils.process_docs).
+dataset_path: "gwkrsrch/music_avqa_hard"
+dataset_kwargs:
+  video: True
+  force_download: False
+  local_files_only: False
+  cache_dir: music_avqa
+lmms_eval_specific_kwargs:
+  default:
+    pre_prompt: ""
+    post_prompt: "\nAnswer the question using a single word or phrase."
+
+metadata:
+  version: 0.0
+  gpt_eval_model_name: gpt-4o-mini

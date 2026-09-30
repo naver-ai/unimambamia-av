@@ -1,0 +1,6 @@
+[submodule "LLaVA"]
+	path = LLaVA
+	url = https://github.com/haotian-liu/LLaVA.git
+[submodule "lmms-eval"]
+	path = lmms-eval
+	url = https://github.com/EvolvingLMMs-Lab/lmms-eval.git

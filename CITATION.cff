@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "UniMambaMia-AV: Do Modern Video-LLMs Need to Listen? A Benchmark Audit and Scalable Remedy"
+authors:
+  - family-names: Kim
+    given-names: Geewook
+    affiliation: "NAVER Cloud AI; KAIST AI"
+  - family-names: Seo
+    given-names: Minjoon
+    affiliation: "KAIST AI"
+repository-code: "https://github.com/naver-ai/unimambamia-av"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Do Modern Video-LLMs Need to Listen? A Benchmark Audit and Scalable Remedy"
+  authors:
+    - family-names: Kim
+      given-names: Geewook
+    - family-names: Seo
+      given-names: Minjoon
+  collection-title: "Proc. Interspeech 2026"
+  year: 2026
+  url: "https://arxiv.org/abs/2509.17901"
